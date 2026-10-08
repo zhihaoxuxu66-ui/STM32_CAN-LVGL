@@ -1,0 +1,66 @@
+# STM32 / Keil repository ignore rules
+# Build outputs and intermediate files
+**/Objects/
+**/Listings/
+**/Debug/
+**/Release/
+**/build/
+**/cmake-build-*/
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.map
+*.lst
+*.axf
+*.hex
+*.bin
+*.elf
+*.out
+*.a
+*.lib
+*.htm
+*.bak
+*.iex
+*.scvd
+*.uvguix
+*.uvguix.*
+*.dbg*
+*.mxproject
+
+# Archives and packaged third-party snapshots
+*.rar
+*.7z
+*.tar
+*.tar.gz
+
+# Tool/editor caches
+.vscode/*.log
+.vscode/.ropeproject/
+.idea/
+.vs/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local/generated metadata
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# Keep vendor-supplied CMSIS static libraries required by projects
+!**/Drivers/CMSIS/Lib/**/*.a
+!**/Drivers/CMSIS/Lib/**/*.lib
+
+# Private local credentials (never commit)
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.pfx
+*.p12
+id_rsa
+id_ed25519
